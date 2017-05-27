@@ -1,0 +1,74 @@
+﻿@model DataExtraction___MVC5.Models.Views.MatchesViewModel
+
+@{
+    ViewBag.Title = "Test";
+}
+
+<div class="row">
+    @if (Model.Matches.Count() != 0)
+    {
+
+        <table class="table table-condensed table-responsive table-striped table-hover table-bordered" style="width:100%;">
+            <thead>
+                <tr>
+                    <th>lp.</th>
+                    <th style="text-align: center;">gospodarz</th>
+                    <th style="text-align: center;">wynik (wynik do przerwy)</th>
+                    <th style="text-align: center;">gość</th>
+                    <th style="text-align: center;">data</th>
+                    <th style="text-align: center;">rozgrywki</th>
+                    <th style="text-align: center;">czy wygrana</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var match in Model.Matches.OrderByDescending(x => x.MatchDate))
+                {
+                    <tr>
+                        <td>@match.Id</td>
+                        @if (match.Host.Name.ToLower() == Model.QueryTeam.ToLower().Replace("_", " "))
+                    {
+                            <td style="font-weight: bold;">@match.Host.Name</td>
+                        }
+                        else
+                        {
+                            <td>@match.Host.Name</td>
+                        }
+
+                        <td style="text-align: center;">@match.Result (@match.HalfResult)</td>
+
+                        @if (match.Guest.Name.ToLower() == Model.QueryTeam.ToLower().Replace("_", " "))
+                    {
+                            <td style="font-weight: bold;">@match.Guest.Name</td>
+                        }
+                        else
+                        {
+                            <td>@match.Guest.Name</td>
+                        }
+
+                        <td>@match.MatchDate.Day - @match.MatchDate.Month - @match.MatchDate.Year</td>
+                        <td>@match.Competitions</td>
+
+                        @if (match.IsWin.ToLower() == "w")
+                    {
+                            <td class="success" style="text-align: center;">@match.IsWin</td>
+                        }
+                        else if (match.IsWin.ToLower() == "p")
+                        {
+                            <td class="danger" style="text-align: center;">@match.IsWin</td>
+                        }
+                        else
+                        {
+                            <td class="warning" style="text-align: center;">@match.IsWin</td>
+                        }
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h1>Nie znaleziono drużyny</h1>
+    }
+</div>
