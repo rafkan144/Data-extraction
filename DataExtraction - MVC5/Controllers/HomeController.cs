@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using DataExtraction___MVC5.Infrastructure;
 using DataExtraction___MVC5.Models;
 using DataExtraction___MVC5.Models.Views;
 using DataExtraction___MVC5.ViewModels;
@@ -17,6 +18,13 @@ namespace DataExtraction___MVC5.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IMailService mailService;
+
+        public HomeController(IMailService mailService)
+        {
+            this.mailService = mailService;
+        }
+
         public ActionResult Index()
         {
             //return View();
@@ -57,6 +65,8 @@ namespace DataExtraction___MVC5.Controllers
             }
 
             viewModel.Matches = GetTeamMatches(viewModel.QueryTeam.ToLower());
+
+            mailService.SendMail();
 
             return View(viewModel);
         }
@@ -102,7 +112,7 @@ namespace DataExtraction___MVC5.Controllers
             }
             catch (WebException e)
             {
-                var statusCode = ((HttpWebResponse)e.Response).StatusCode;
+                var  tusCode = ((HttpWebResponse)e.Response).StatusCode;
             }
 
             var nullDocument = new HtmlDocument();
