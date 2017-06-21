@@ -202,6 +202,9 @@
     <Content Include="Views\Home\Query.cshtml" />
     <Content Include="Views\Emails\_ViewStart.cshtml" />
     <Content Include="Views\Emails\Web.config" />
+    <Content Include="Views\Emails\DataExtractionConfirmation.cshtml" />
+    <Content Include="Views\Emails\DataExtractionConfirmationHtml.cshtml" />
+    <Content Include="Views\Emails\DataExtractionConfirmationText.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
