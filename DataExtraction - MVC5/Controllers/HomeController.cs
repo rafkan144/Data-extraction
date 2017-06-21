@@ -193,6 +193,7 @@ namespace DataExtraction___MVC5.Controllers
         public ActionResult SendStatusEmail(int orderid, string lastname)
         {
             DataExtractionConfirmationEmail email = new DataExtractionConfirmationEmail();
+
             email.To = "project@project.pl";
             email.FullAddress = "my address";
             email.Send();

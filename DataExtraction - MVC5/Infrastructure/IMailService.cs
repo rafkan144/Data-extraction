@@ -8,5 +8,6 @@ namespace DataExtraction___MVC5.Infrastructure
 {
     public interface IMailService
     {
+        void SendMail();
     }
 }
