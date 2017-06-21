@@ -10,6 +10,7 @@ using System.Web;
 using System.Web.Mvc;
 using DataExtraction___MVC5.Models;
 using DataExtraction___MVC5.Models.Views;
+using DataExtraction___MVC5.ViewModels;
 using HtmlAgilityPack;
 
 namespace DataExtraction___MVC5.Controllers
@@ -186,6 +187,17 @@ namespace DataExtraction___MVC5.Controllers
             var list = root.Descendants(nodename).Where(d => d.Attributes.Contains(attributeName) && d.Attributes[attributeName].Value.Contains(attributeValue)).ToList();
 
             return list;
+        }
+
+        [AllowAnonymous]
+        public ActionResult SendStatusEmail(int orderid, string lastname)
+        {
+            DataExtractionConfirmationEmail email = new DataExtractionConfirmationEmail();
+            email.To = "project@project.pl";
+            email.FullAddress = "my address";
+            email.Send();
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
     }
 }
