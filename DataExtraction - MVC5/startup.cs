@@ -14,13 +14,23 @@ namespace DataExtraction___MVC5
     {
         public void Configuration(IAppBuilder app)
         {
-            //ConfigureAuth(app);
+            //    //ConfigureAuth(app);
 
-            app.UseHangfire(config =>
-            {
-                //config.UseSqlServerStorage("StoreContext");
-                //config.UseServer();
-            });
+            //    app.UseHangfire(config =>
+            //    {
+            //        //config.UseSqlServerStorage("StoreContext");
+            //        //config.UseServer();
+            //    });
+
+        //    GlobalConfiguration.Configuration
+
+        //        .UseSqlServerStorage("DefaultConnection");
+
+        //    BackgroundJob.Enqueue(() => Console.WriteLine("Getting Started with HangFire!"));
+
+        //    app.UseHangfireDashboard();
+
+        //    app.UseHangfireServer();
         }
     }
 }

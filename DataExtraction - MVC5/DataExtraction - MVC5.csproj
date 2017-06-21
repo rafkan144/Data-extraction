@@ -182,7 +182,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\BackgroundPostalMailService.cs" />
+    <Compile Include="Infrastructure\HangFirePostalMailService.cs" />
+    <Compile Include="Infrastructure\Helpers.cs" />
     <Compile Include="Infrastructure\IMailService.cs" />
+    <Compile Include="Infrastructure\PostalMailService.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\Team.cs" />

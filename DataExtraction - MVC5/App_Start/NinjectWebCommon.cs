@@ -62,9 +62,9 @@ namespace DataExtraction___MVC5.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            //kernel.Bind<IMailService>().To<BackgroundPostalMailService>();
+            kernel.Bind<IMailService>().To<BackgroundPostalMailService>();
             //kernel.Bind<IMailService>().To<PostalMailService>();
-            kernel.Bind<IMailService>().To<HangFirePostalMailService>();
+            //kernel.Bind<IMailService>().To<HangFirePostalMailService>();
         }        
     }
 }

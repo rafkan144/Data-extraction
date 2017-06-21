@@ -278,3 +278,96 @@ C:\Users\Rafał\Desktop\techniki - projekt\mój\DataExtraction - MVC5\DataExtrac
 C:\Users\Rafał\Desktop\techniki - projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\obj\Debug\DataExtraction - MVC5.csprojResolveAssemblyReference.cache
 C:\Users\Rafał\Desktop\techniki - projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\obj\Debug\DataExtraction - MVC5.dll
 C:\Users\Rafał\Desktop\techniki - projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\obj\Debug\DataExtraction - MVC5.pdb
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\ApplicationInsights.config
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\csc.exe
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\csc.exe.config
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\csc.rsp
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\csi.exe
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\csi.rsp
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\System.AppContext.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\System.Collections.Immutable.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\System.IO.FileSystem.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\System.Reflection.Metadata.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\vbc.exe
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\vbc.exe.config
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\vbc.rsp
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\VBCSCompiler.exe
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\roslyn\VBCSCompiler.exe.config
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\DataExtraction - MVC5.dll.config
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\DataExtraction - MVC5.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\DataExtraction - MVC5.pdb
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Antlr3.Runtime.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Hangfire.Core.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Hangfire.SqlServer.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\HtmlAgilityPack.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.Agent.Intercept.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.DependencyCollector.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.Web.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.WindowsServer.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.ApplicationInsights.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.Owin.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.Web.Infrastructure.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Newtonsoft.Json.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Ninject.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Ninject.Web.Common.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Ninject.Web.Mvc.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Owin.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Postal.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\RazorEngine.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Helpers.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Mvc.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Optimization.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Razor.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.WebPages.Deployment.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.WebPages.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.WebPages.Razor.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\WebActivatorEx.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\WebGrease.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Hangfire.Core.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Hangfire.SqlServer.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\HtmlAgilityPack.pdb
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\HtmlAgilityPack.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.Owin.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Ninject.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Ninject.Web.Common.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Ninject.Web.Mvc.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Postal.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\RazorEngine.pdb
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\RazorEngine.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Helpers.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Mvc.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Optimization.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.Razor.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.WebPages.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.WebPages.Deployment.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\System.Web.WebPages.Razor.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Antlr3.Runtime.pdb
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Newtonsoft.Json.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.ApplicationInsights.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.DependencyCollector.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.WindowsServer.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\Microsoft.AI.Web.xml
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\es\Hangfire.Core.resources.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\bin\zh\Hangfire.Core.resources.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\obj\Debug\DataExtraction - MVC5.csprojResolveAssemblyReference.cache
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\obj\Debug\DataExtraction - MVC5.dll
+E:\moje\studia Rafał\semestr 6\techniki multimedialne\projekt\mój\DataExtraction - MVC5\DataExtraction - MVC5\obj\Debug\DataExtraction - MVC5.pdb
