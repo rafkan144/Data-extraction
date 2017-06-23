@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace DataExtraction___MVC5.Models.Views
 {
+    /// <summary>
+    /// klasa view modelu, dziedzicząca po klasie Email</summary>
     public class DataExtractionConfirmationEmail : Email
     {
         public string To { get; set; }
