@@ -11,8 +11,13 @@ using DataExtraction___MVC5.Models.Views;
 
 namespace DataExtraction___MVC5.Infrastructure
 {
+    /// <summary>
+    /// metoda wysyłająca maila za pomocą biblioteki hangfire, implementuje interfejs IMailService </summary>
     public class HangFirePostalMailService : IMailService
     {
+        /// <summary>
+        /// metoda wysyłająca maila za pomocą biblioteki hangfire </summary>
+        /// <param name="email">obiekt klasy view modelu uzupełniany w metodzie</param>
         public void SendMail(DataExtractionConfirmationEmail email)
         {
             var urlHelper = new UrlHelper(HttpContext.Current.Request.RequestContext);
