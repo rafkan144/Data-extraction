@@ -15,21 +15,32 @@ using HtmlAgilityPack;
 
 namespace DataExtraction___MVC5.Controllers
 {
+    /// <summary>
+    /// klasa kontrolera, posiada wszystkie akcje aplikacji oraz metody dodatkowe/pomocnicze,
+    /// które są niezbędne do funkcjonowania aplikacji </summary>
     public class HomeController : Controller
     {
         private readonly IMailService mailService;
 
+        /// <summary>
+        /// konstruktor klasy kontrolera </summary>
+        /// <param name="mailService">obiekt serwisu maili, który jest przypisywany w konstruktorze
+        /// do pola zadeklarowanego wyżej </param>
         public HomeController(IMailService mailService)
         {
             this.mailService = mailService;
         }
 
+        /// <summary>
+        /// główna akcja aplikacji, przekierowuje do akcji Query</summary>
         public ActionResult Index()
         {
             //return View();
             return RedirectToAction("Query");
         }
 
+        /// <summary>
+        /// akcja wygenerowana automatycznie, zostawiona na przyszłe potrzeby</summary>
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -37,6 +48,8 @@ namespace DataExtraction___MVC5.Controllers
             return View();
         }
 
+        /// <summary>
+        /// akcja wygenerowana automatycznie, zostawiona na przyszłe potrzeby</summary>
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
@@ -44,11 +57,18 @@ namespace DataExtraction___MVC5.Controllers
             return View();
         }
 
+        /// <summary>
+        /// akcja zwracająca widok, w którym jest formualrz wyszukiwania </summary>
         public ActionResult Query()
         {
             return View();
         }
 
+        /// <summary>
+        /// akcja POST metody wyżej, przesyła formularz </summary>
+        /// <param name="viewModel">obiekt klasy view modelu
+        /// wypełniony danymi z formularza </param>
+        /// <returns>przekierowanie do akcji Matches z parametrem viewModel</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Query(MatchesViewModel viewModel)
@@ -56,6 +76,11 @@ namespace DataExtraction___MVC5.Controllers
             return RedirectToAction("Matches", viewModel);
         }
 
+        /// <summary>
+        /// akcja przyjmuje parametr przekazany z akcji Query
+        /// wypełnia viewModel kolejnymi danymi, wysyła maila z logiem wyszukiwania </summary>
+        /// <param name="viewModel">obiekt klasy view modelu </param>
+        /// <returns>widok z parametrem viewModel</returns>
         public ActionResult Matches(MatchesViewModel viewModel)
         {
             if (viewModel.QueryTeam.Contains(" "))
@@ -75,6 +100,11 @@ namespace DataExtraction___MVC5.Controllers
             return View(viewModel);
         }
 
+        /// <summary>
+        /// prywatna metoda, ustawia adres url strony, z której pobierane są dane.
+        /// wywołuje kolejne przywatne metody</summary>
+        /// <param name="query">nazwa drużyny, której mecze są wyszukiwane </param>
+        /// <returns>liste meczy</returns>
         private IList<Match> GetTeamMatches(string query)
         {
             var url = "http://www.tabelepilkarskie.com/" + "druzyna/" + query + "/";
@@ -86,6 +116,10 @@ namespace DataExtraction___MVC5.Controllers
             return matchList;
         }
 
+        /// <summary>
+        /// wywołuje metodę ładującą dokument html </summary>
+        /// <param name="url">adres url strony z danymi przekazany z innej metody</param>
+        /// <returns>węzeł dokumentu html</returns>
         private HtmlNode GetHTMLDocument(string url)
         {
             var document = LoadDocument(url);
@@ -93,6 +127,11 @@ namespace DataExtraction___MVC5.Controllers
             return document.DocumentNode;
         }
 
+        /// <summary>
+        /// tworzy obiekt dokumentu html i przypisuje do niego kod html ze wskazanej strony </summary>
+        /// <param name="url">adres url strony z danymi przekazany z innej metody</param>
+        /// <returns>w razie powodzenia zwraca dokument html z kodem strony html
+        /// w razie nie powodzenia zwraca pusty dokument html</returns>
         public HtmlDocument LoadDocument(string url)
         {
             Uri uri = new Uri(url);
@@ -124,6 +163,11 @@ namespace DataExtraction___MVC5.Controllers
             return nullDocument;
         }
 
+        /// <summary>
+        /// przeszukuje węzeł dokumentu html, przypisuje odpowiednie dane do zmiennych, tworzy obiekty klas
+        /// i wypełnia pola tych obiektów</summary>
+        /// <param name="root"> węzeł dokumentu html</param>
+        /// <returns>listę meczy </returns>
         private List<Match> GetMatchList(HtmlNode root)
         {
             var list = new List<HtmlNode>();
@@ -196,6 +240,14 @@ namespace DataExtraction___MVC5.Controllers
             return matchesList;
         }
 
+        /// <summary>
+        /// przeszukuje węzeł dokuemntu html
+        /// tworzy listę kolejnych węzłów (podwęzłów)</summary>
+        /// <param name="root"> węzeł dokumentu html</param>
+        /// <param name="nodename"> nazwa węzła</param>
+        /// <param name="attributeName"> nazwa atrybutu</param>
+        /// <param name="attributeValue"> wartość atrybutu</param>
+        /// <returns>listę węzłów dokumentu html </returns>
         private List<HtmlNode> GetNodesViaAttribute(HtmlNode root, string nodename = "", string attributeName = "", string attributeValue = "")
         {
             var list = root.Descendants(nodename).Where(d => d.Attributes.Contains(attributeName) && d.Attributes[attributeName].Value.Contains(attributeValue)).ToList();
@@ -203,6 +255,10 @@ namespace DataExtraction___MVC5.Controllers
             return list;
         }
 
+        /// <summary>
+        /// akcja przygotowana do użycia w hangfire
+        /// wysyła maila</summary>
+        /// <returns>kod statusu OK</returns>
         [AllowAnonymous]
         public ActionResult SendStatusEmail()
         {
@@ -215,6 +271,10 @@ namespace DataExtraction___MVC5.Controllers
             return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
 
+        /// <summary>
+        /// metoda pobierająca adres IP aktualnego użytkownika </summary>
+        /// <param name="GetLan"> zmienna bool, domyślnie ustawiona na false</param>
+        /// <returns>adres IP użytkownika</returns>
         private static string GetVisitorIPAddress(bool GetLan = false)
         {
             string visitorIPAddress = System.Web.HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
