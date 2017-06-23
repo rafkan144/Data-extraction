@@ -6,11 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataExtraction___MVC5.ViewModels
+namespace DataExtraction___MVC5.Models.Views
 {
     public class DataExtractionConfirmationEmail : Email
     {
         public string To { get; set; }
         public string FullAddress { get; set; }
+        public string UserIP { get; set; }
+        public DateTime Date { get; set; }
+        public string Query { get; set; }
     }
 }

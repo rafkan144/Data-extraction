@@ -11,7 +11,6 @@ using System.Web.Mvc;
 using DataExtraction___MVC5.Infrastructure;
 using DataExtraction___MVC5.Models;
 using DataExtraction___MVC5.Models.Views;
-using DataExtraction___MVC5.ViewModels;
 using HtmlAgilityPack;
 
 namespace DataExtraction___MVC5.Controllers
@@ -66,7 +65,12 @@ namespace DataExtraction___MVC5.Controllers
 
             viewModel.Matches = GetTeamMatches(viewModel.QueryTeam.ToLower());
 
-            mailService.SendMail();
+            DataExtractionConfirmationEmail email = new DataExtractionConfirmationEmail();
+
+            email.Query = viewModel.QueryTeam;
+            email.UserIP = GetVisitorIPAddress();
+
+            mailService.SendMail(email);
 
             return View(viewModel);
         }
@@ -200,7 +204,7 @@ namespace DataExtraction___MVC5.Controllers
         }
 
         [AllowAnonymous]
-        public ActionResult SendStatusEmail(int orderid, string lastname)
+        public ActionResult SendStatusEmail()
         {
             DataExtractionConfirmationEmail email = new DataExtractionConfirmationEmail();
 
@@ -209,6 +213,59 @@ namespace DataExtraction___MVC5.Controllers
             email.Send();
 
             return new HttpStatusCodeResult(HttpStatusCode.OK);
+        }
+
+        private static string GetVisitorIPAddress(bool GetLan = false)
+        {
+            string visitorIPAddress = System.Web.HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
+
+            if (String.IsNullOrEmpty(visitorIPAddress))
+                visitorIPAddress = System.Web.HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"];
+
+            if (string.IsNullOrEmpty(visitorIPAddress))
+                visitorIPAddress = System.Web.HttpContext.Current.Request.UserHostAddress;
+
+            if (string.IsNullOrEmpty(visitorIPAddress) || visitorIPAddress.Trim() == "::1")
+            {
+                GetLan = true;
+                visitorIPAddress = string.Empty;
+            }
+
+            if (GetLan && string.IsNullOrEmpty(visitorIPAddress))
+            {
+                //This is for Local(LAN) Connected ID Address
+                string stringHostName = Dns.GetHostName();
+                //Get Ip Host Entry
+                IPHostEntry ipHostEntries = Dns.GetHostEntry(stringHostName);
+                //Get Ip Address From The Ip Host Entry Address List
+                IPAddress[] arrIpAddress = ipHostEntries.AddressList;
+
+                try
+                {
+                    visitorIPAddress = arrIpAddress[arrIpAddress.Length - 2].ToString();
+                }
+                catch
+                {
+                    try
+                    {
+                        visitorIPAddress = arrIpAddress[0].ToString();
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            arrIpAddress = Dns.GetHostAddresses(stringHostName);
+                            visitorIPAddress = arrIpAddress[0].ToString();
+                        }
+                        catch
+                        {
+                            visitorIPAddress = "127.0.0.1";
+                        }
+                    }
+                }
+            }
+
+            return visitorIPAddress;
         }
     }
 }

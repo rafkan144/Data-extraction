@@ -7,12 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using DataExtraction___MVC5.Models.Views;
 
 namespace DataExtraction___MVC5.Infrastructure
 {
     public class HangFirePostalMailService : IMailService
     {
-        public void SendMail()
+        public void SendMail(DataExtractionConfirmationEmail email)
         {
             var urlHelper = new UrlHelper(HttpContext.Current.Request.RequestContext);
             string url = urlHelper.Action("SendStatusEmail", "Home", HttpContext.Current.Request.Url.Scheme);
