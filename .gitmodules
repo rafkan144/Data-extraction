@@ -4,3 +4,6 @@
 [submodule "Ninject"]
 	path = Ninject
 	url = https://github.com/ninject/Ninject
+[submodule "postal"]
+	path = postal
+	url = https://github.com/andrewdavey/postal
