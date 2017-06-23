@@ -7,3 +7,6 @@
 [submodule "postal"]
 	path = postal
 	url = https://github.com/andrewdavey/postal
+[submodule "Hangfire"]
+	path = Hangfire
+	url = https://github.com/HangfireIO/Hangfire
