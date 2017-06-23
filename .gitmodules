@@ -1,3 +1,6 @@
 [submodule "html-agility-pack"]
 	path = html-agility-pack
 	url = https://www.github.com/zzzprojects/html-agility-pack
+[submodule "Ninject"]
+	path = Ninject
+	url = https://github.com/ninject/Ninject
