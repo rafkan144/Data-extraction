@@ -5,6 +5,8 @@ using System.Web;
 
 namespace DataExtraction___MVC5.Models
 {
+    /// <summary>
+    /// klasa modelu, reprezentująca mecz, dziedziczy z klasy bazowej</summary>
     public class Match : BaseEntity
     {
         public Team Host { get; set; }
